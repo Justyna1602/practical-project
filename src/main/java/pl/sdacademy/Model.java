@@ -2,7 +2,7 @@ package pl.sdacademy;
 
 public class Model {
     private Integer id;
-    private String make;
+    private Make make;
     private String name;
 
 }
