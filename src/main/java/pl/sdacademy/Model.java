@@ -22,4 +22,12 @@ public class Model {
     public String getName() {
         return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMake(Make make) {
+        this.make = make;
+    }
 }

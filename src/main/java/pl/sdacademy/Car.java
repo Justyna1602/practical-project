@@ -22,4 +22,12 @@ public class Car {
     public String getVin() {
         return vin;
     }
+
+    public void setModel(Model model) {
+        this.model = model;
+    }
+
+    public void setVin(String vin) {
+        this.vin = vin;
+    }
 }

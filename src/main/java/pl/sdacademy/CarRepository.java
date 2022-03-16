@@ -1,17 +1,17 @@
 package pl.sdacademy;
 
-import java.util.List;
+import java.util.Collection;
 
 public interface CarRepository {
-    Car getCarById();
+    Car getCarById(Integer id);
 
     void addCar(Car car);
 
-    void updateCar(Car car);
+    void updateCar(Integer id, String carVin, String modelName, String makeName);
 
-    void deleteCr(Integer id);
+    void deleteCar(Integer id);
 
-    List<Car> getAllCars();
+    Collection<Car> getAllCars();
 
 
 }

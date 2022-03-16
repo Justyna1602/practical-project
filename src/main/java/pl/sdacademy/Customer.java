@@ -35,4 +35,5 @@ public class Customer {
     public Integer getPhoneNo() {
         return phoneNo;
     }
+
 }
