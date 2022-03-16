@@ -1,8 +1,7 @@
 package pl.sdacademy;
 
 public class Car {
-    private String make;
-    private String model;
+    private Model model;
     private String vin;
 
 }
