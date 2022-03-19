@@ -14,5 +14,4 @@ public interface MakeRepository {
     void deleteCar(Integer id);
 
     Collection<Make> getAllCars();
-
 }
