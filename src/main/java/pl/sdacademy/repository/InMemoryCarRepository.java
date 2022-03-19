@@ -1,4 +1,8 @@
-package pl.sdacademy;
+package pl.sdacademy.repository;
+
+import pl.sdacademy.entity.Car;
+import pl.sdacademy.entity.Make;
+import pl.sdacademy.entity.Model;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -22,6 +26,10 @@ public class InMemoryCarRepository implements CarRepository {
     }
 
     @Override
+    public void updateCar(Car car) {
+
+    }
+
     public void updateCar(Integer id, String carVin, String modelName, String makeName) {
         Car car = getCarById(id);
         car.setVin(carVin);

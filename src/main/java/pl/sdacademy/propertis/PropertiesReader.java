@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.propertis;
 
 import java.io.IOException;
 import java.io.InputStream;

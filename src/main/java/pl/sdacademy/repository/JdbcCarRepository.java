@@ -1,10 +1,13 @@
-package pl.sdacademy;
+package pl.sdacademy.repository;
+
+import pl.sdacademy.entity.Car;
+import pl.sdacademy.repository.CarRepository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.Collection;
 
-public class JdbcCarRepository implements CarRepository{
+public class JdbcCarRepository implements CarRepository {
     private static PreparedStatement preparedStatement;
     private Connection connection;
 
@@ -23,7 +26,7 @@ public class JdbcCarRepository implements CarRepository{
     }
 
     @Override
-    public void updateCar(Integer id, String carVin, String modelName, String makeName) {
+    public void updateCar(Car car) {
 
     }
 

@@ -1,4 +1,6 @@
-package pl.sdacademy;
+package pl.sdacademy.repository;
+
+import pl.sdacademy.entity.Car;
 
 import java.util.Collection;
 
@@ -7,7 +9,7 @@ public interface CarRepository {
 
     void addCar(Car car);
 
-    void updateCar(Integer id, String carVin, String modelName, String makeName);
+    void updateCar(Car car);
 
     void deleteCar(Integer id);
 

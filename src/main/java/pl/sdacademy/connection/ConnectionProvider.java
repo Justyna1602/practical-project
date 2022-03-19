@@ -1,4 +1,6 @@
-package pl.sdacademy;
+package pl.sdacademy.connection;
+
+import pl.sdacademy.propertis.PropertiesReader;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
