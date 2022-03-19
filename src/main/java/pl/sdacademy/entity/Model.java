@@ -1,42 +1,24 @@
 package pl.sdacademy.entity;
 
+import lombok.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
+@Builder
 public class Model {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Make make;
     private String name;
 
-    public Model(Integer id, Make make, String name) {
-        this.id = id;
-        this.make = make;
-        this.name = name;
-    }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public Make getMake() {
-        return make;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setMake(Make make) {
-        this.make = make;
-    }
-
-    @Override
-    public String toString() {
-        return "Model{" +
-                "id=" + id +
-                ", make=" + make +
-                ", name='" + name + '\'' +
-                '}';
-    }
 }

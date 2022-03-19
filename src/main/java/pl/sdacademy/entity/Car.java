@@ -1,42 +1,24 @@
 package pl.sdacademy.entity;
 
+import lombok.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
+@Builder
 public class Car {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Model model;
     private String vin;
 
-    public Car(Integer id, Model model, String vin) {
-        this.id = id;
-        this.model = model;
-        this.vin = vin;
-    }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public Model getModel() {
-        return model;
-    }
-
-    public String getVin() {
-        return vin;
-    }
-
-    public void setModel(Model model) {
-        this.model = model;
-    }
-
-    public void setVin(String vin) {
-        this.vin = vin;
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "id=" + id +
-                ", model=" + model +
-                ", vin='" + vin + '\'' +
-                '}';
-    }
 }
