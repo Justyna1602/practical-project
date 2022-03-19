@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.entity;
 
 public class Car {
     private Integer id;
@@ -29,5 +29,14 @@ public class Car {
 
     public void setVin(String vin) {
         this.vin = vin;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", model=" + model +
+                ", vin='" + vin + '\'' +
+                '}';
     }
 }

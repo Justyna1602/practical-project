@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.entity;
 
 public class Model {
     private Integer id;
@@ -29,5 +29,14 @@ public class Model {
 
     public void setMake(Make make) {
         this.make = make;
+    }
+
+    @Override
+    public String toString() {
+        return "Model{" +
+                "id=" + id +
+                ", make=" + make +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

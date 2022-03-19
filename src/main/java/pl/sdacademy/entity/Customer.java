@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.entity;
 
 public class Customer {
     private Integer id;
@@ -36,4 +36,14 @@ public class Customer {
         return phoneNo;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNo=" + phoneNo +
+                '}';
+    }
 }
