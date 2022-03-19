@@ -1,4 +1,4 @@
-package pl.sdacademy.ui;
+package pl.sdacademy;
 
 import pl.sdacademy.entity.Car;
 import pl.sdacademy.entity.Make;
