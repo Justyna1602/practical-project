@@ -12,6 +12,5 @@ public class MakeUI {
     public MakeUI(MakeRepository modelRepository) {
         this.scanner = new Scanner(System.in);
         this.modelRepository = modelRepository;
-
     }
 }
